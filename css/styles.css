@@ -64,7 +64,12 @@ body {
     }
 .section-title,
 .list-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-text-color);
+}
+.list-title {
+    margin-bottom: 10px;
 }
 .section-title {
     font-weight: 700;
@@ -79,7 +84,16 @@ a {
     padding: 0;
     list-style: none;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+    width: 1200px;
 
+}
 /* <Header> */
 .logo-web {
         font-family: 'Raleway',sans-serif;
@@ -128,21 +142,24 @@ color: var(--accent-text-color);
 /* hero index.html*/
 .hero {
     background-color: var(--hero-bg-color);
+    text-align: center;
 }
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
-    background-color: tomato;
+    margin-bottom: 30px;
+
+   
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;}
 
 /* Feature */
 .feature .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -164,7 +181,7 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
 }
-.staff p {
+.staff .text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;}
