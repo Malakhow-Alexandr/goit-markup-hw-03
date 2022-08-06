@@ -13,8 +13,14 @@
 }
 /* Button */
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    
     color: var(--title-text-color);
     background-color: var(--staff-bg-color);
+    border: 1px solid transparent;
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -22,23 +28,20 @@
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-}
+    }
 .hero .button.primary {
+    min-width: 216px;
+    padding: 10px 32px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-}
+    }
 
-.button:hover,
-.button:focus {
-    color: var(--primary-white-color);
-    background-color: var(--button-bg-color);
-}
 .button.primary {
     color: var(--primary-white-color);
     background-color: var(--button-bg-color);
@@ -49,6 +52,9 @@
     background-color: var(--staff-bg-color);
 }
 
+.botton-list {
+    display: inline-block;
+}
 /* Body */
 body {
     background-color: var(--primary-bg-color);
@@ -69,6 +75,8 @@ a {
     text-decoration: none;
 }
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -122,6 +130,9 @@ color: var(--accent-text-color);
     background-color: var(--hero-bg-color);
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: tomato;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
