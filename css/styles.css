@@ -11,50 +11,7 @@
     --button-bg-color: #2196F3;
 
 }
-/* Button */
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 6px 22px;
-    
-    color: var(--title-text-color);
-    background-color: var(--staff-bg-color);
-    border: 1px solid transparent;
-    
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    }
-.hero .button.primary {
-    min-width: 216px;
-    padding: 10px 32px;
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    }
-
-.button.primary {
-    color: var(--primary-white-color);
-    background-color: var(--button-bg-color);
-}
-
-.button.secondary {
-    color: var(--title-text-color);
-    background-color: var(--staff-bg-color);
-}
-
-.botton-list {
-    display: inline-block;
-}
 /* Body */
 body {
     background-color: var(--primary-bg-color);
@@ -90,9 +47,52 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     
-    
     width: 1200px;
+}
+/* Button */
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
 
+    color: var(--title-text-color);
+    background-color: var(--staff-bg-color);
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.hero .button.primary {
+    min-width: 216px;
+    padding: 10px 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--button-bg-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--staff-bg-color);
+}
+
+.botton-list {
+    display: inline-block;
 }
 /* <Header> */
 .logo-web {
@@ -169,10 +169,20 @@ color: var(--accent-text-color);
     line-height: 1.14;
     text-transform: uppercase
 }
+.feature .container {
+    margin-bottom: 102px;
+}
+/* Work list */
+.work-list .container {
+    margin-bottom: 94px;
+}
 
 
 /* Staff */
 .staff {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--staff-bg-color);
 }
 .staff .list-title {
@@ -182,12 +192,22 @@ color: var(--accent-text-color);
     text-align: center;
 }
 .staff .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;}
+    text-align: center;
+}
+
+
 /* Footer */
 .footer {
     background-color: var(--footer-bg-color);
+}
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0;
 }
 .logo-footer-web {
     font-family: 'Raleway';
@@ -224,6 +244,9 @@ color: var(--accent-text-color);
 
 /* Portfolio *//* Portfolio *//* Portfolio *//* Portfolio */
 .card-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -231,6 +254,9 @@ color: var(--accent-text-color);
     letter-spacing: 0.06em;
 }
 .card-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
