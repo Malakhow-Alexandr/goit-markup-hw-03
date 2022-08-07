@@ -91,9 +91,18 @@ a {
     background-color: var(--staff-bg-color);
 }
 
-.botton-list {
-    display: inline-block;
+.button.primary:hover,
+.button.primary:focus {
+    color: var(--title-text-color);
+    background-color: var(--staff-bg-color);
 }
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--button-bg-color);
+}
+
 /* <Header> */
 .logo-web {
         font-family: 'Raleway',sans-serif;
@@ -169,12 +178,15 @@ color: var(--accent-text-color);
     line-height: 1.14;
     text-transform: uppercase
 }
-.feature .container {
-    margin-bottom: 102px;
+
+.feature {
+    padding-top: 86px;
+    padding-bottom: 102px;
 }
 /* Work list */
-.work-list .container {
-    margin-bottom: 94px;
+.work-list {
+    padding-top: 0;
+    padding-bottom: 94px;
 }
 
 
@@ -207,7 +219,7 @@ color: var(--accent-text-color);
 .footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 0;
+    
 }
 .logo-footer-web {
     font-family: 'Raleway';
@@ -223,19 +235,22 @@ color: var(--accent-text-color);
     color: var(--primary-white-color)
 }
 
-.address {
+.address-link {
     color: var(--primary-white-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    }
+}
 
 .list-link {
     color: var(--adress-text-color);
     font-size: 14px;
     line-height: 1.7;
 }
+
+.address-link:hover,
+.address-link:focus,
 .list-link:hover,
 .list-link:focus {
     color: var(--accent-text-color);
@@ -243,6 +258,20 @@ color: var(--accent-text-color);
 
 
 /* Portfolio *//* Portfolio *//* Portfolio *//* Portfolio */
+
+.main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+    margin-bottom: 50px;
+}
+
+.button-list .item {
+    display: inline-block;
+}
+
 .card-title {
     margin-top: 0;
     margin-bottom: 0;
