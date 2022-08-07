@@ -248,14 +248,14 @@ color: var(--accent-text-color);
     
 }
 
-.logo-web {
+.logo-footer-web {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text-color);
 }
 
-.logo-studio {
+.logo-footer-studio {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
