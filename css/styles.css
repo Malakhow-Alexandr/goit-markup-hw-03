@@ -9,6 +9,7 @@
     --staff-bg-color: #F5F4FA;
     --footer-bg-color: #2F303A;
     --button-bg-color: #2196F3;
+    --outline-color: #eeeeee;
 
 }
 
@@ -108,7 +109,7 @@ a {
         font-family: 'Raleway',sans-serif;
         font-size: 26px;
         line-height: 1.19;
-    color: var(--accent-text-color);
+        color: var(--accent-text-color);
     }
 
 .logo-studio {
@@ -118,7 +119,22 @@ a {
     color: var(--title-text-color)}
 
 /* Site nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item + .item { 
+    margin-left: 50px;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -135,7 +151,17 @@ a {
 .site-nav .current:focus {
     color: var(--title-text-color);
 }
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.auth-nav .item + .item {
+    margin-left: 50px;
+}
 .auth-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -221,20 +247,23 @@ color: var(--accent-text-color);
     padding-bottom: 60px;
     
 }
-.logo-footer-web {
+
+.logo-web {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text-color);
 }
 
-.logo-footer-studio {
+.logo-studio {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     color: var(--primary-white-color)
 }
-
+.address {
+    margin-top: 20px;
+}
 .address-link {
     color: var(--primary-white-color);
     font-style: normal;
@@ -272,9 +301,24 @@ color: var(--accent-text-color);
     display: inline-block;
 }
 
-.card-title {
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-set .item {
+    flex-basis: auto;
+    padding-bottom: 20px;
+    outline: 1px solid var(--outline-color);
+}
+
+.item .picture {
+    margin-bottom: 20px;
+}
+
+.item .card-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -282,7 +326,7 @@ color: var(--accent-text-color);
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.card-text {
+.item .card-text {
     margin-top: 0;
     margin-bottom: 0;
 
