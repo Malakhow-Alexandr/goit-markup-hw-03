@@ -172,9 +172,8 @@ a {
 color: var(--accent-text-color);
 }
 
-/* </Header> */
 
-/* hero index.html*/
+/* hero*/
 .hero {
     background-color: var(--hero-bg-color);
     text-align: center;
@@ -192,6 +191,12 @@ color: var(--accent-text-color);
     text-transform: uppercase;}
 
 /* Feature */
+.feature-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
 .feature .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -214,7 +219,14 @@ color: var(--accent-text-color);
     padding-top: 0;
     padding-bottom: 94px;
 }
-
+.work-img {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.work-list .img {
+    display: block;
+}
 
 /* Staff */
 .staff {
@@ -222,6 +234,10 @@ color: var(--accent-text-color);
     padding-bottom: 94px;
 
     background-color: var(--staff-bg-color);
+}
+.staff .img {
+    display: block;
+    margin-bottom: 30px;
 }
 .staff .list-title {
     font-weight: 500;
@@ -236,7 +252,19 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
 }
+.staff-list {
+    display: flex;
+    flex-basis: auto;
+    margin-top: 50px;
+    gap: 30px;
 
+}
+.staff-list .item {
+    padding-bottom: 30px;
+    outline: 1px solid var(--outline-color);
+    border-radius: 4px;
+    background-color: var(--primary-bg-color);
+}
 
 /* Footer */
 .footer {
@@ -274,6 +302,7 @@ color: var(--accent-text-color);
 
 .list-link {
     color: var(--adress-text-color);
+    font-style: normal;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -294,11 +323,13 @@ color: var(--accent-text-color);
 }
 
 .button-list {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
-.button-list .item {
-    display: inline-block;
+.button-list .item + .item {
+   margin-left: 8px; 
 }
 
 .card-set {
@@ -307,7 +338,7 @@ color: var(--accent-text-color);
     gap: 30px;
 }
 .card-set .item {
-    flex-basis: auto;
+    
     padding-bottom: 20px;
     outline: 1px solid var(--outline-color);
 }
