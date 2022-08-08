@@ -105,6 +105,14 @@ a {
 }
 
 /* <Header> */
+.page-header {
+    border-bottom: 1px solid var(--outline-color);
+}
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .logo-web {
         font-family: 'Raleway',sans-serif;
         font-size: 26px;
@@ -191,10 +199,12 @@ color: var(--accent-text-color);
     text-transform: uppercase;}
 
 /* Feature */
+.feature {
+    padding-top: 86px;
+    padding-bottom: 102px;
+}
 .feature-list {
     display: flex;
-    justify-content: flex-end;
-    gap: 30px;
 }
 
 .feature .text {
@@ -209,10 +219,11 @@ color: var(--accent-text-color);
     line-height: 1.14;
     text-transform: uppercase
 }
-
-.feature {
-    padding-top: 86px;
-    padding-bottom: 102px;
+.feature .item {
+    width: 270px;
+}
+.feature .item + .item {
+    margin-left: 30px;
 }
 /* Work list */
 .work-list {
@@ -316,7 +327,6 @@ color: var(--accent-text-color);
 
 
 /* Portfolio *//* Portfolio *//* Portfolio *//* Portfolio */
-
 .main-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -341,6 +351,7 @@ color: var(--accent-text-color);
     
     padding-bottom: 20px;
     outline: 1px solid var(--outline-color);
+    border-bottom: 1px solid var(--outline-color);
 }
 
 .item .picture {
