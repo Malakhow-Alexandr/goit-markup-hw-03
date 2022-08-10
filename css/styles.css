@@ -366,16 +366,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin: -15px; 
 }
 
 .card-set > .item {
-  flex-basis: calc((100%-60px)/3);
-
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
+  
+  width: 370px;  
 }
+
 .item .card-content{
   border-left: 1px solid var(--outline-color);
   border-right: 1px solid var(--outline-color);
