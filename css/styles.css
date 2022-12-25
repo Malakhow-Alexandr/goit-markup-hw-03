@@ -374,7 +374,6 @@ img {
   
   width: 370px;  
 }
-
 .item .card-content{
   border-left: 1px solid var(--outline-color);
   border-right: 1px solid var(--outline-color);
